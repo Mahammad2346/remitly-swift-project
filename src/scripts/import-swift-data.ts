@@ -5,7 +5,7 @@ import * as XLSX from "xlsx";
 const importData = async () => {
   try {
     await AppDataSource.initialize();
-    console.log("📦 Database connected!");
+    console.log("Database connected!");
 
     const workbook = XLSX.readFile("Interns_2025_SWIFT_CODES.xlsx");
     const sheet = workbook.Sheets[workbook.SheetNames[0]];
